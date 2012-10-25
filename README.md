@@ -9,7 +9,7 @@ None
 
 Attributes
 ==========
-node.services = { "service_name": [ "enable" ],
+node.services = { }
 
 Usage
 =====
