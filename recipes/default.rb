@@ -16,3 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+node.services.each do |service_name_and_actions|
+  service_name_and_actions.each_pair do |service_name, actions|
+    service service_name do
+      action actions
+    end
+  end
+end
