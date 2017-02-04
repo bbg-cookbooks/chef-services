@@ -17,8 +17,9 @@
 # limitations under the License.
 #
 
-node.services.each_pair do |service_name, actions|
+node.chef_services.services.each_pair do |service_name, actions|
   service service_name do
+    ignore_failure node.chef_services.ignore_failures
     action actions
   end
 end
