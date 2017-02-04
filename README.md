@@ -9,7 +9,8 @@ None
 
 Attributes
 ==========
-node.services = { }
+node.chef_services.services = { }
+node.chef_services.ignore_failures = false
 
 Usage
 =====
